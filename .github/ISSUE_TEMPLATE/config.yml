@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: CrumpNet board
-    url: https://github.com/orgs/CrumpNet/projects/3
-    about: All changes and planned work across CrumpNet repos.
+  - name: Project board
+    url: https://github.com/users/joshuacrump/projects/2
+    about: All changes and planned work across my repos.
