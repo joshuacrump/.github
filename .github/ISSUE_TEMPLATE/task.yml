@@ -1,0 +1,12 @@
+name: Task
+description: Non-change work - research, docs, cleanup, ideas.
+type: Task
+projects: ["CrumpNet/3"]
+body:
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What needs doing, and what "done" looks like.
+    validations:
+      required: true

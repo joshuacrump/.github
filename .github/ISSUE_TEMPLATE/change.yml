@@ -1,0 +1,63 @@
+name: Change
+description: Plan a change to the homelab, a site, or a tool - what, how, how to check it, and how to undo it.
+title: "[Change] "
+type: Change
+projects: ["CrumpNet/3"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One issue per change. Break multi-stack work into sub-issues (one per stack or step).
+        After creating it, set **Change type**, **Risk**, **Area**, and **Change window** on the CrumpNet board.
+        Link the PR with `Closes #<this issue>`. Before closing, set **Outcome** and comment with what you verified.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary and reason
+      description: What is changing and why.
+    validations:
+      required: true
+
+  - type: input
+    id: affected
+    attributes:
+      label: Affected systems
+      description: Stacks, hosts, or services touched.
+      placeholder: e.g. media-vpn, NPM, CORE-CA01, crump.net
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation steps
+      description: The steps you'll run, in order.
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: How you'll confirm it worked.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback plan
+      description: How to undo it if verification fails.
+    validations:
+      required: true
+
+  - type: input
+    id: window
+    attributes:
+      label: Planned window
+      description: Free text. The date itself goes in the board's Change window field.
+      placeholder: e.g. Saturday evening, ~30 min downtime for media stacks
