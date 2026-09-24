@@ -1,7 +1,7 @@
 name: Task
 description: Non-change work - research, docs, cleanup, ideas.
-type: Task
-projects: ["CrumpNet/3"]
+labels: ["task"]
+projects: ["joshuacrump/2"]
 body:
   - type: textarea
     id: details
