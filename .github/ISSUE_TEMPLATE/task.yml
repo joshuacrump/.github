@@ -1,6 +1,7 @@
 name: Task
 description: Non-change work - research, docs, cleanup, ideas.
 labels: ["task"]
+assignees: ["joshuacrump"]
 projects: ["joshuacrump/2"]
 body:
   - type: textarea

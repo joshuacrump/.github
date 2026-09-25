@@ -2,6 +2,7 @@ name: Change
 description: Plan a change to the homelab, a site, or a tool - what, how, how to check it, and how to undo it.
 title: "[Change] "
 labels: ["change"]
+assignees: ["joshuacrump"]
 projects: ["joshuacrump/2"]
 body:
   - type: markdown
